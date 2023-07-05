@@ -3,6 +3,8 @@ import { ExpoConfig, ConfigContext } from "@expo/config";
 const CLERK_PUBLISHABLE_KEY =
   "pk_test_aW52aXRpbmctcm9vc3Rlci0zNi5jbGVyay5hY2NvdW50cy5kZXYk";
 
+const projectId = "ee9c2737-efbc-4852-942a-3898afbd2aa4";
+
 const defineConfig = (_ctx: ConfigContext): ExpoConfig => ({
   name: "Eden Garden Quest",
   slug: "eden-garden-quest",
@@ -32,7 +34,7 @@ const defineConfig = (_ctx: ConfigContext): ExpoConfig => ({
   },
   extra: {
     eas: {
-      projectId: "your-project-id",
+      projectId,
     },
     CLERK_PUBLISHABLE_KEY,
   },
